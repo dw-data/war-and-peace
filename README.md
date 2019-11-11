@@ -2,7 +2,7 @@ After the Cold War ended, the world hoped for an era of peace. But things turned
 
 *In this repository, you will find the methodology, data and code behind the story that came out of this analysis.*
 
-**Read the full article on DW.com:** [English](https://www.dw.com/a-51136876) | [German](https://www.dw.com/a-51120561) | [Indonesian](https://www.dw.com/a-51146003)
+**Read the full article on DW.com:** [English](https://www.dw.com/a-51136876) | [German](https://www.dw.com/a-51120561) | [Hindi](https://www.dw.com/a-51152188) | [Indonesian](https://www.dw.com/a-51146003)
 
 **Story by:** [Kira Schacht](https://twitter.com/daten_drang)
 
@@ -67,8 +67,8 @@ ggplot(conf.count, aes(x=year, y=n, fill = intensity_level)) +
 
 ``` r
 #save chart
-ggsave("../plots/conflict_count.png", device = "png", width = 16, height = 9, scale = 0.5)
-ggsave("../plots/conflict_count.svg", device = "svg", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_count.png", device = "png", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_count.svg", device = "svg", width = 16, height = 9, scale = 0.5)
 ```
 
 Further analysis
@@ -207,8 +207,8 @@ ggplot(conf.type, aes(x=year, y=share, fill = type_of_conflict)) +
 
 ``` r
 #Save chart
-ggsave("../plots/conflict_type.png", device = "png", width = 16, height = 9, scale = 0.5)
-ggsave("../plots/conflict_type.svg", device = "svg", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_type.png", device = "png", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_type.svg", device = "svg", width = 16, height = 9, scale = 0.5)
 ```
 
 *FINDING:* there is a trend towards more internationalized internal conflicts
@@ -237,13 +237,13 @@ ggplot(mil, aes(Year, military.expenditure.share)) +
 
 ``` r
 #save chart
-ggsave("../plots/conflict_military.png", device = "png", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_military.png", device = "png", width = 16, height = 9, scale = 0.5)
 ```
 
     ## Warning: Removed 1 rows containing missing values (geom_path).
 
 ``` r
-ggsave("../plots/conflict_military.svg", device = "svg", width = 16, height = 9, scale = 0.5)
+ggsave("conflict_military.svg", device = "svg", width = 16, height = 9, scale = 0.5)
 ```
 
     ## Warning: Removed 1 rows containing missing values (geom_path).
